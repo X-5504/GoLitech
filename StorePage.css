@@ -1,0 +1,41 @@
+.main-stores{
+  padding: 150px;
+  font-size: 20px;
+}
+
+.stores{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.store-details{
+  display: flex;
+  gap: 20px;
+}
+
+.store-details img{
+  width: 50vw;
+  height: 20vw;
+}
+
+.store-descriptions{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 820px) {
+  .main-stores{
+    padding: 70px;
+  }
+
+  .store-details{
+    display: block;
+  }
+
+  .store-details img{
+    width: 100%;
+    height: auto;
+  }
+}

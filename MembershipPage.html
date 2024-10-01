@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GoLitech</title>
+  <link rel="stylesheet" href="./HomePage.css">
+  <link rel="stylesheet" href="./MembershipPage.css">
+  <script src="./validate.js"></script>
+</head>
+<body>
+  <header>
+    <img class="logo" src="./assets/GoLitechLogoTulisan.png" alt="logo">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="./HomePage.html">Home</a></li>
+        <li><a href="./ProductsPage.html">Products</a></li>
+        <li><a href="./MembershipPage.html" class="active">Membership</a></li>
+        <li><a href="./StorePage.html">Stores</a></li>
+        <li><a href="./AboutUsPage.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main-membership">
+    <form action="./HomePage.html">
+      <table>
+        <tr class="form-content">
+          <td><label for="names">Name</label></td>
+          <td><input type="text" name="names" id="names"></td>
+        </tr>
+        <tr class="form-content">
+          <td></td>
+          <td><span id="name-error"></span></td>
+        </tr>
+        <tr class="form-content">
+          <td>Gender</td>
+          <td class="radio">
+            <div>
+              <input type="radio" name="gender" id="male" value="Male">
+              <label for="male">Male</label>
+            </div>
+            <div>
+              <input type="radio" name="gender" id="female" value="Female">
+              <label for="female">Female</label>
+            </div>
+          </td>
+        </tr>
+        <tr class="form-content">
+          <td></td>
+          <td><span id="gender-error"></span></td>
+        </tr>
+        <tr class="form-content">
+          <td><label for="email">Email</label></td>
+          <td><input type="text" name="email" id="email"></td>
+        </tr>
+        <tr class="form-content">
+          <td></td>
+          <td><span id="email-error"></span></td>
+        </tr>
+        <tr class="form-content">
+          <td><label for="phoneNumber">Phone Number</label></td>
+          <td><input type="text" name="phoneNumber" id="phoneNumber"></td>
+        </tr>
+        <tr class="form-content">
+          <td></td>
+          <td><span id="phone-error"></span></td>
+        </tr>
+        <tr class="form-content">
+          <td><label for="address">Address</label></td>
+          <td class="address"><textarea name="address" id="address" cols="70" rows="10" oninput="validateAddress()"></textarea><span id="address-count"></span></td>
+        </tr>
+        <tr class="form-content">
+          <td></td>
+          <td><span id="address-error"></span></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><button type="submit" onclick="return validate(event)">Submit</button></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+  <footer>
+    <div class="social-media">
+      <h2>Reach out our social media</h2>
+      <div class="sosmed-logo">
+        <img src="./assets/instagram.png" alt="instagram">
+        <img src="./assets/facebook.png" alt="facebook">
+        <img src="./assets/twitter.png" alt="twitter">
+        <img src="./assets/discord.png" alt="discord">
+        <img src="./assets/youtube.png" alt="youtube">
+      </div>
+    </div>
+    <div class="company-info">
+      <div class="info-text">
+        <h2>GOLITECH</h2>
+        <p>
+          Address: Jl. Gatot Subroto No. 123, Jakarta 12345, Indonesia<br>
+          Phone: +62 812 3456 7890
+        </p>
+      </div>
+      <div class="info-img">
+        <a href="./HomePage.html"><img src="./assets/GoLitechLogoTulisan.png" alt=""></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

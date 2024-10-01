@@ -1,0 +1,66 @@
+.main-membership{
+  padding: 150px 150px 30px 150px;
+}
+
+form{
+  position: relative;
+  width: 100%;
+  padding: 20px;
+}
+
+table{
+  width: 100%;
+  gap: 20px;
+  border-spacing: 15px;
+}
+
+table span{
+  color: red;
+}
+
+input[type="text"], textarea, button{
+  background-color: #edf0f1;
+  color: #24252a;
+  width: 100%;
+  padding: 3px;
+}
+
+textarea{
+  resize: none;
+}
+
+button{
+  width: 100%;
+  color: #24252a;
+}
+
+button:hover{
+  background-color: #42ff43;
+  transition: 0.3s all ease-out;
+}
+
+input[type="radio"]{
+  accent-color: #42ff43;
+}
+
+.radio{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.address{
+  position: relative;
+}
+
+#address-count{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+@media screen and (max-width: 820px) {
+  .main-membership{
+    padding: 100px 70px;
+  }
+}
